@@ -48,7 +48,18 @@ For more information see the generator output, our
 [example application code](https://github.com/rafaelfranca/simple_form-bootstrap) and
 [the live example app](http://simple-form-bootstrap.plataformatec.com.br/).
 
-### Zurb Foundation 5
+### Zurb Foundation
+
+#### Foundation 6
+
+To generate wrappers that are compatible with [Zurb Foundation 6](http://foundation.zurb.com/), pass
+the `foundation6` option to the generator, like this:
+
+```console
+rails generate simple_form:install --foundation6
+```
+
+#### Foundation 5
 
 To generate wrappers that are compatible with [Zurb Foundation 5](http://foundation.zurb.com/), pass
 the `foundation` option to the generator, like this:
@@ -57,8 +68,8 @@ the `foundation` option to the generator, like this:
 rails generate simple_form:install --foundation
 ```
 
-Please note that the Foundation wrapper does not support the `:hint` option by default. In order to
-enable hints, please uncomment the appropriate line in `config/initializers/simple_form_foundation.rb`.
+Please note that the Foundation 5 wrapper does not support the `:hint` option by default. In order to
+enable hints, either use the Foundation 6 wrappers or uncomment the appropriate line in `config/initializers/simple_form_foundation.rb`.
 You will need to provide your own CSS styles for hints.
 
 Please see the [instructions on how to install Foundation in a Rails app](http://foundation.zurb.com/docs/applications.html).
